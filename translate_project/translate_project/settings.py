@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'users_app', # 유저관리 앱
     'vocabulary_app', # 단어장 앱
     'board_app', # 게시판 앱
-    'game_app',
+    'game_app', # 일반 작은 게임 앱
+    'roleplay_game_app', # 상황극 게임 앱
     # 딕셔너리앱은 기본앱에서 처리해도 되고 필요시 앱 추가 필요
 ]
 
@@ -78,7 +79,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'translate_project.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

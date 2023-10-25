@@ -41,7 +41,7 @@ class RolePlayingRoomConsumer(JsonWebsocketConsumer):
                 })
 
      # 채팅방 조회       
-    def get_room(self) -> RolePlayingRoom | None:
+    def get_room(self) -> RolePlayingRoom:
         user: AbstractUser = self.scope["user"]
         room_pk = self.scope["url_route"]["kwargs"]["room_pk"]
         room: RolePlayingRoom = None

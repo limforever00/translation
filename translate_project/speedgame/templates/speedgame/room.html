@@ -11,7 +11,7 @@
         const roomName = JSON.parse(document.getElementById('room-name').textContent);
 
         const speedgameSocket = new WebSocket(
-            'ws://'+ window.location.host + '/ws/speedgame/'+ roomName + '/');
+            `ws://`+ window.location.host + `/ws/speedgame/`);
 
         speedgameSocket.onmessage = function(e) {
             const data = JSON.parse(e.data);

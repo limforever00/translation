@@ -3,5 +3,5 @@ from django.urls import re_path
 from . import consumers
 
 websocket_urlpatterns = [
-    re_path(r'ws/speedgame/(?P<room_name>\w+)/$', consumers.SpeedgameConsumer.as_asgi()),
+    re_path(r'ws/speedgame/', consumers.SpeedgameConsumer.as_asgi()),
 ]

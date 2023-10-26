@@ -118,14 +118,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'translate_project.wsgi.application'
 ASGI_APPLICATION = "translate_project.asgi.application"   # 채널스 asgi로 구동하기
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [("127.0.0.1", 6379)],
-        },
-    },
-}
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [("127.0.0.1", 6379)],
+#         },
+#     },
+# }
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
